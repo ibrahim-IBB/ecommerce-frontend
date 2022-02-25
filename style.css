@@ -1,0 +1,122 @@
+/* general css code*/
+:root{
+    --color-border:#c4c4c469;
+    --input-size:16px;
+    --icon-size:20px;
+    --icon-color:#9897ff;
+    --header-font-size:15px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bgHover{
+    transition:0.3s;
+}
+.bgHover:hover{
+    background-color:cadetblue;
+}
+
+/* header section part 1 */
+
+.header-part-1{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.8fr 1.8fr 1.8fr 1.7fr 1.7fr 0.7fr 5.2fr 0.2fr 0.2fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    border:1px solid var(--color-border);
+}
+
+.header-part-1 .item{
+    box-sizing: border-box;
+    padding: 10px;
+    margin:0 2px;
+}
+.header-part-1 .item li{
+    font-size: var(--icon-size);
+    color:var(--icon-color);
+}
+
+.header-part-1 .item.select{
+    outline: none;
+    border:1px solid var(--color-border);
+    padding: 7px;
+    border-radius: 3px;
+    width:300px
+}
+
+/* header section part 2 */
+.header-part-2{
+    padding-left: 77px;
+    display: grid;
+    align-items: center;
+    grid-template-columns:  1.1fr 1.1fr 1.3fr 1.3fr 13.7fr  3.7fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    border:1px solid var(--color-border);
+}
+
+.header-part-2 .item{
+    margin:3px;
+    padding:10px 0;
+    font-size: var(--header-font-size);
+}
+
+.header-part-2 .box-search{
+    border:1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header-part-2 .box-search input{
+    flex:1;
+    padding: 5px;
+    border:none;
+    outline: none;
+    font-size: var(--input-size);
+}
+
+.header-part-2 .box-search li{
+    color:var(--icon-color);
+
+    font-size: var(--icon-size);
+    padding: 10px;
+}
+.header-part-2 li{
+    font-size: var(--icon-size);
+    color:var(--icon-color);
+
+}
+
+.header-part-2 .item.lang li{
+    font-size: 10px;
+}
+
+.header-part-2 .item.user img{
+    border-radius: 100px;
+}
+
+/* header section 3 */
+
+.header-part-3{
+    display: flex;
+    border: 1px solid var(--color-border);
+    background-color:aliceblue;
+    justify-content:space-around;
+}
+.header-part-3 .item{
+    padding: 10px;
+}
+
+.header-part-3 .item a{
+color:black;
+text-decoration: none;
+font-size: var(--header-font-size);
+}
